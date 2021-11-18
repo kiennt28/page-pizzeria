@@ -1,0 +1,215 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #242424;
+}
+
+input,
+button,
+textarea,
+select {
+  font-size: 14px;
+  border: 0;
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+a {
+  color: inherit;
+}
+
+section[id] {
+  scroll-margin-top: 30px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.header .main-menu {
+  position: relative;
+}
+.header .main-menu .nav-menu {
+  padding-right: 200px;
+}
+
+.logo {
+  height: 136px;
+  line-height: 133px;
+  max-width: 160px;
+  z-index: 1;
+}
+
+.header span {
+  position: absolute;
+  padding: 30px 145px;
+  top: 38px;
+  background: #ffba00;
+}
+
+.nav-menu > li > a {
+  font-size: 33.33px;
+  line-height: 140px;
+  height: 140px;
+  text-decoration: none;
+  position: relative;
+}
+.nav-menu > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 46px;
+  height: 2px;
+  background: #ffba00;
+  transform-origin: right bottom;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.nav-menu li a:hover {
+  color: #ffba00;
+}
+.nav-menu li a:hover::before {
+  transform-origin: left bottom;
+  transform: scale(1, 1);
+}
+
+.menu {
+  float: left;
+  clear: both;
+  width: 100%;
+  position: relative;
+}
+.menu li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.menu a {
+  display: block;
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .container {
+    max-width: 1770px;
+  }
+
+  .header .main-menu .nav-menu {
+    padding-right: 350px;
+  }
+
+  .menu ul {
+    gap: 4rem !important;
+  }
+}
+#slider img {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: 960px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#slider {
+  position: relative;
+}
+#slider .slider-content {
+  position: absolute;
+  top: 46%;
+  width: 100%;
+}
+#slider .slider-content .slider-title {
+  position: relative;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 125px;
+  font-weight: 700;
+  line-height: 104px;
+  padding-left: 150px;
+  z-index: 99;
+}
+#slider .slider-content .slider-title span {
+  font-weight: normal;
+  font-size: 104px;
+  display: block;
+  letter-spacing: 10px;
+}
+
+.slider-banner::before {
+  content: "";
+  position: absolute;
+  top: 41.5%;
+  height: 200px;
+  width: 100%;
+  z-index: 1;
+  background: #ffba00;
+}
+
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.vertical-middle {
+  display: flex;
+  align-items: flex-end;
+}
+
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  padding: 26px 22px 22px 72px;
+  font-size: 38px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #ffba00;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  margin-bottom: 22px;
+  z-index: 999;
+}
+.primary-btn:hover {
+  color: #ffba00;
+}
+
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #000000;
+  transition: width 0.25s linear;
+  z-index: -1;
+}
+
+.primary-btn:hover::before {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
